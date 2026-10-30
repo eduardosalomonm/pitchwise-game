@@ -1,0 +1,7 @@
+# Optional collectors are disabled in this public edition by default.
+PLAYTEST_ENABLED="false"
+PLAYTEST_RETENTION_READY="false"
+PLAYTEST_OWNER_EMAIL="owner@example.com"
+PLAYTEST_CONTACT="Contact the person who invited you."
+PLAYTEST_TRUST_CF_IP="false"
+VISITOR_TRACKING_ENABLED="false"

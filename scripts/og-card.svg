@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17462c"/><stop offset="1" stop-color="#0d2a1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#ec9b39" stop-opacity="0.18"/><stop offset="1" stop-color="#ec9b39" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="16" refY="11" orient="auto">
+      <path d="M0,2 L20,11 L0,20 z" fill="#f4e9d2"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- Pitch (attacking half) -->
+  <g fill="none" stroke="#f4e9d2" stroke-opacity="0.55" stroke-width="3">
+    <rect x="640" y="46" width="520" height="538" rx="4"/>
+    <line x1="640" y1="46" x2="640" y2="584"/>
+    <path d="M640,245 A70,70 0 0 1 640,385"/>
+    <rect x="1010" y="170" width="150" height="290"/>
+    <rect x="1102" y="245" width="58" height="140"/>
+    <circle cx="1060" cy="315" r="3" fill="#f4e9d2"/>
+  </g>
+  <!-- Rival XI -->
+  <g fill="none" stroke="#f4e9d2" stroke-width="4">
+    <circle cx="880" cy="200" r="17"/><circle cx="905" cy="330" r="17"/><circle cx="990" cy="250" r="17"/>
+    <circle cx="995" cy="410" r="17"/><circle cx="770" cy="560" r="17"/>
+  </g>
+  <!-- Our move: pass and run -->
+  <path d="M735,470 C800,420 860,395 945,372" fill="none" stroke="#f4e9d2" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrow)"/>
+  <path d="M862,528 C960,505 1055,455 1068,318" fill="none" stroke="#ec7b39" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#arrow)"/>
+  <g fill="#ec7b39" stroke="#fff3df" stroke-width="4">
+    <circle cx="735" cy="470" r="22"/><circle cx="960" cy="365" r="22"/><circle cx="840" cy="540" r="22"/>
+  </g>
+  <circle cx="735" cy="470" r="36" fill="none" stroke="#ec9b39" stroke-width="3" stroke-opacity="0.7"/>
+  <!-- Copy -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="72" y="142" fill="#ec9b39" font-size="24" font-weight="700" letter-spacing="4">INTERACTIVE FOOTBALL TACTICS</text>
+        <text x="64" y="330" fill="#fff3df" font-size="132" font-weight="700" letter-spacing="-6">Pitchwise</text>
+    <rect x="72" y="408" width="150" height="7" rx="3.5" fill="#ec7b39"/>
+    <text x="72" y="470" fill="#f4e9d2" font-size="40" font-weight="500">Decide the next move.</text>
+    <text x="72" y="552" fill="#f4e9d2" fill-opacity="0.75" font-size="24" font-weight="500">Match Day · Tournaments · Training Ground</text>
+  </g>
+</svg>

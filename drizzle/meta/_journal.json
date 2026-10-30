@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790972462711,
+      "tag": "0000_solid_paper_doll",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790973612529,
+      "tag": "0001_hesitant_tombstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791131048490,
+      "tag": "0002_mixed_korg",
+      "breakpoints": true
+    }
+  ]
+}

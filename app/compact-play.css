@@ -1,0 +1,403 @@
+/* Option A: one context, the full pitch, then choices. No fixed-height clipping. */
+.play-layout [hidden] {
+  display: none !important;
+}
+.play-layout .match-choice-list button,
+.play-layout .choice-button {
+  font-size: 1rem;
+}
+.play-layout .match-choice-card h2 {
+  font-weight: 700;
+}
+.play-layout .play-context {
+  margin: 0;
+  padding: 0.8rem 0.25rem 0.6rem;
+  color: var(--foreground);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.play-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  min-height: 56px;
+  background: #103b27;
+  color: #fff7e8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.85rem;
+}
+.play-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.play-back svg {
+  width: 20px;
+  height: 20px;
+}
+.play-back:focus-visible,
+.play-details summary:focus-visible {
+  outline: 3px solid #e99842;
+  outline-offset: 2px;
+}
+.match-hud.play-hud {
+  display: flex;
+  margin-bottom: 0;
+}
+.match-hud.play-hud .scoreboard {
+  margin-inline: auto;
+}
+.match-hud.play-hud .match-moment-count {
+  max-width: 5rem;
+  font-size: 0.65rem;
+}
+.match-hud.play-hud .match-minute {
+  font-size: 1rem;
+}
+.match-hud.play-hud > div:nth-child(2) {
+  display: grid;
+}
+.match-hud.play-hud .match-possession {
+  font-size: 0.6rem;
+  letter-spacing: 0;
+}
+.match-hud.play-hud .scoreboard strong {
+  min-width: 3rem;
+  font-size: 1.5rem;
+}
+.play-layout .match-heading {
+  display: block;
+  max-width: none;
+  margin-bottom: 0;
+}
+.play-layout .match-heading h1.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.play-tools {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+.play-tools .build-up-controls {
+  flex: 1;
+  padding: 0;
+}
+.play-tools .build-up-controls > output:first-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.play-tools .build-up-label {
+  display: inline;
+}
+.play-tools .read-the-play {
+  margin: 0;
+  flex: 0 0 auto;
+}
+.play-tools .read-the-play summary {
+  padding-inline: 0.5rem;
+  white-space: nowrap;
+}
+.play-tools .read-the-play[open] {
+  flex-basis: 100%;
+}
+.play-tools .read-the-play[open] > div {
+  position: static;
+  box-shadow: none;
+  border: 0;
+  font-size: 0.875rem;
+}
+.play-details {
+  margin-top: 0.35rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+.play-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 650;
+  list-style: none;
+}
+.play-details summary::-webkit-details-marker {
+  display: none;
+}
+.play-details summary::after {
+  content: '+';
+  font-size: 1.2rem;
+}
+.play-details[open] summary::after {
+  content: '−';
+}
+.play-details > p {
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+.play-layout .match-consequence {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
+.play-layout .match-consequence > p {
+  border-left: 3px solid #38764b;
+  border-radius: 0.3rem 0.65rem 0.65rem 0.3rem;
+  background: #eaf0e2;
+  padding: 0.65rem;
+  font-size: 0.95rem;
+}
+.play-layout .match-consequence.is-negative > p {
+  border-color: #a64f35;
+  background: #f8eade;
+}
+.play-layout .match-consequence.is-neutral > p {
+  border-color: #ad812e;
+  background: #f3ecdd;
+}
+.play-layout .match-consequence > button,
+.play-layout .reveal-actions > button {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 0.7rem;
+}
+.play-layout .match-consequence > p strong {
+  color: var(--foreground);
+}
+.play-layout .match-choice-card h2.sr-only {
+  margin: 0;
+}
+.play-layout .match-handoff {
+  font-size: 0.8rem;
+  padding-block: 0.3rem;
+}
+.lesson-toolbar.play-hud {
+  flex-direction: row;
+  margin-bottom: 0;
+  position: sticky;
+  top: 0.25rem;
+  z-index: 20;
+}
+.lesson-toolbar.play-hud strong {
+  font-size: 0.875rem;
+}
+.lesson-toolbar.play-hud > span {
+  font-size: 0.75rem;
+  text-align: right;
+}
+.lesson-actor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 36px;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+}
+.lesson-actor > span {
+  font-size: 0.75rem;
+}
+.play-layout .lesson-copy h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.play-layout .lesson-copy {
+  grid-row: auto;
+}
+.play-layout .lesson-reveal-column {
+  grid-column: auto;
+}
+.play-layout .reveal-panel {
+  margin: 0;
+  padding: 0.8rem;
+  box-shadow: none;
+  border-radius: 0.8rem;
+}
+.play-layout .choice-rationale {
+  margin: 0.5rem 0;
+}
+.play-layout .reveal-actions {
+  margin-top: 0.6rem;
+}
+.play-layout .pitch-legend,
+.play-layout .facing-key {
+  display: none;
+}
+.play-layout .pitch-shell {
+  padding: 0.25rem;
+  border-radius: 0.85rem;
+  box-shadow: none;
+}
+.play-layout .lesson-pitch-region {
+  scroll-margin-top: 70px;
+}
+.play-layout .lesson-motion-details {
+  padding-inline: 0.25rem;
+}
+@media (min-width: 780px) {
+  .play-layout .lesson-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .play-layout .lesson-pitch-column {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .play-layout .lesson-copy,
+  .play-layout .lesson-reveal-column {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+.play-layout .replay-toolbar {
+  margin: 0.25rem 0;
+}
+.first-match.play-layout .first-match-nav {
+  flex-wrap: wrap;
+  background: #103b27;
+  color: #fff7e8;
+  border-radius: 0.85rem;
+  min-height: 56px;
+  padding: 0.25rem 0.5rem;
+  gap: 0.4rem;
+}
+.first-match.play-layout .first-match-nav strong {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.first-match.play-layout .first-match-nav button {
+  color: inherit;
+  padding-inline: 0.5rem;
+}
+.first-match.play-layout .first-match-nav > span {
+  font-size: 0.7rem;
+  max-width: 4.5rem;
+}
+.first-match.play-layout .first-step {
+  margin-top: 0;
+}
+.first-match.play-layout .first-actor {
+  min-height: 36px;
+}
+.first-match.play-layout .first-tip {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.5rem;
+  margin: 0.25rem 0;
+}
+.first-match.play-layout .first-question h2 {
+  margin-top: 0.25rem;
+}
+@media (max-width: 779px) {
+  .has-active-match > header,
+  .has-compact-play > header {
+    display: none;
+  }
+  .play-layout {
+    padding: 0.35rem 0.65rem calc(1rem + env(safe-area-inset-bottom));
+  }
+  .match-day-wrap.is-playing.play-layout {
+    padding: 0.35rem 0.65rem calc(1rem + env(safe-area-inset-bottom));
+  }
+  .is-playing .match-hud.play-hud {
+    padding: 0.25rem 0.3rem;
+    top: max(0.25rem, env(safe-area-inset-top));
+    gap: 0.25rem;
+  }
+  .is-playing .match-hud.play-hud .score-team-code {
+    font-size: 0.75rem;
+  }
+  .play-layout .match-actor-strip {
+    padding: 0.15rem 0.25rem;
+    background: transparent;
+    border: 0;
+    min-height: 40px;
+    gap: 0.4rem;
+  }
+  .play-layout .match-actor-strip small {
+    font-size: 0.65rem;
+    line-height: 1.25;
+  }
+  .play-layout .actor-number {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 0.7rem;
+  }
+  .play-layout .match-actor-strip > span:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.15rem 0.4rem;
+  }
+  .play-layout .match-actor-strip strong {
+    font-size: 0.8rem;
+  }
+  .play-layout .match-pitch-shell {
+    padding: 0.2rem;
+    box-shadow: none;
+    border-radius: 0.85rem;
+  }
+  .play-layout .match-pitch-orientation {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .play-layout .match-decision-grid,
+  .play-layout .lesson-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .play-layout .match-decision-grid > *,
+  .play-layout .lesson-grid > * {
+    width: 100%;
+  }
+  .play-layout .match-choice-card {
+    border: 0;
+    padding: 0.25rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .play-layout .match-choice-card h2 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .play-layout .match-choice-list,
+  .play-layout .choice-list {
+    margin-top: 0.5rem;
+    gap: 0.4rem;
+  }
+  .play-layout .match-choice-list button,
+  .play-layout .choice-button {
+    min-height: 48px;
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.7rem;
+  }
+  .play-layout .lesson-copy {
+    padding: 0.25rem;
+  }
+  .play-layout .lesson-pitch-region .replay-toolbar {
+    justify-content: flex-end;
+  }
+  .play-layout .space-caption {
+    display: none;
+  }
+}
