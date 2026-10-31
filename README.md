@@ -4,6 +4,8 @@ A mobile-first football decision game: tactical training, standalone matches, cu
 
 [Play the game](https://pitchwise.eilvi.com/) · [Case study](https://eduardosalomon.eilvi.com/projects/the-invisible-game) · [Portfolio](https://eduardosalomon.eilvi.com/)
 
+> **Public source edition.** Pitchwise was developed in a private repository between September and October 2026 (39 commits). This repository is a curated snapshot of that work, without private playtest data or original working assets.
+
 ![Pitchwise gameplay screenshot](https://raw.githubusercontent.com/eduardosalomonm/eduardosalomonm/main/assets/pitchwise.webp)
 
 ## Engineering focus
